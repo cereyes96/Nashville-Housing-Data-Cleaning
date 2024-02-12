@@ -160,10 +160,9 @@ Select *,
 				) as row_num
 From [Nashville Housing].dbo.HousingData
 )
-SELECT *
+DELETE *
 From RowNumCTE
 Where row_num > 1
-ORDER BY PropertyAddress
 
 --Deleting unused columns
 
